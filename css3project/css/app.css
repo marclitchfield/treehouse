@@ -1,0 +1,105 @@
+body {
+	padding: 0;
+	background-color: #000;
+}
+
+.container {
+	position: relative;
+	width: 800px;
+	height: 400px;
+	background-color: #dedede;
+	margin: 100px auto;
+	box-shadow: 0 0 100px 40px rgba(255,255,255,0.4);
+	border-radius: 20px;
+	-webkit-perspective: 800;
+	-webkit-perspective-origin: 50% 80px;
+}
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotateY(360deg); }
+	to   { -webkit-transform: rotateY(0deg); }
+}
+
+.spinny {
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: visible;
+	-webkit-animation: spin 12s infinite linear;
+}
+
+.word {
+	position: absolute;
+	top: 10px;
+	left: 320px;
+	font-size: 8em;
+	-webkit-transform: translateZ(0px);
+}
+
+.panel {
+	position: absolute;
+	top: 120px;
+	left: 350px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 3em;
+	font-family: Times;
+	border: 2px solid #222;
+	border-radius: 4px;
+	box-shadow: 0 0 20px rgba(255,255,255,0.8);
+/*	background: -webkit-gradient(linear, center top, center bottom, color-stop(0.5, #fff), to(rgba(255,255,255,0)));*/
+/*	background: rgba(255,255,255,0.5);*/
+}
+
+.panel {
+	-webkit-backface-visibility: visible;
+}
+
+.p1 {
+	-webkit-transform: rotateY(0deg) translateZ(200px);
+	background: hsla(0, 50%, 50%, 0.8);
+}
+.p2 {
+	-webkit-transform: rotateY(30deg) translateZ(200px);
+	background: hsla(30, 50%, 50%, 0.8);
+}
+.p3 {
+	-webkit-transform: rotateY(60deg) translateZ(200px);
+	background: hsla(60, 50%, 50%, 0.8);
+}
+.p4 {
+	-webkit-transform: rotateY(90deg) translateZ(200px);
+	background: hsla(90, 50%, 50%, 0.8);
+}
+.p5 {
+	-webkit-transform: rotateY(120deg) translateZ(200px);
+	background: hsla(120, 50%, 50%, 0.8);
+}
+.p6 {
+	-webkit-transform: rotateY(150deg) translateZ(200px);
+	background: hsla(150, 50%, 50%, 0.8);
+}
+.p7 {
+	-webkit-transform: rotateY(180deg) translateZ(200px);
+	background: hsla(180, 50%, 50%, 0.8);
+}
+.p8 {
+	-webkit-transform: rotateY(210deg) translateZ(200px);
+	background: hsla(210, 50%, 50%, 0.8);
+}
+.p9 {
+	-webkit-transform: rotateY(240deg) translateZ(200px);
+	background: hsla(240, 50%, 50%, 0.8);
+}
+.p10 {
+	-webkit-transform: rotateY(270deg) translateZ(200px);
+	background: hsla(270, 50%, 50%, 0.8);
+}
+.p11 {
+	-webkit-transform: rotateY(300deg) translateZ(200px);
+	background: hsla(300, 50%, 50%, 0.8);
+}
+.p12 {
+	-webkit-transform: rotateY(330deg) translateZ(200px);
+	background: hsla(330, 50%, 50%, 0.8);
+}
